@@ -1,4 +1,6 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ToDoList from './ToDoList';
+import FormInputArea from './FormInputArea';
 
 export default class ScrollAreaComponent extends Component {
     render() {
@@ -6,11 +8,8 @@ export default class ScrollAreaComponent extends Component {
             <div className="mainBodyBackground">
                 <div className="mainBody">
                     <h1 className="theresAlwaysMore">There's always more to do...</h1>
-                    <form className="form">
-                        <input placeholder="what are we missing?" className="Input-text"></input>
-                        <button type="submit" className="submitButton">+</button>
-                    </form>
-
+                    <FormInputArea />
+                    <ToDoList />
                 </div>
 
             </div>

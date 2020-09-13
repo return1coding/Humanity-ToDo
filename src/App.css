@@ -1,56 +1,146 @@
 /* HTML CSS RESET */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+  list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* HTML CSS RESET */
 
-.App{
+
+
+.App {
   height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
 .header {
@@ -61,53 +151,53 @@ table {
   display: flex;
 }
 
-.headerMainTitle{
+.headerMainTitle {
   align-self: center;
   flex: 9;
   padding-left: 3rem;
-  
+
 }
 
-.pageTitle{
+.pageTitle {
   font-size: 2em;
 }
 
-.pageSubtitle{
+.pageSubtitle {
   font-size: 1.3em;
   padding-left: 0.4em;
 }
 
-.navLinksDiv{
+.navLinksDiv {
   flex: 1;
   display: flex;
   align-self: center;
   padding-right: 3rem;
 }
 
-.navLinkItemDiv{
-  margin: 0.5rem; 
+.navLinkItemDiv {
+  margin: 0.5rem;
 }
 
-.navLinkItemDiv a{
+.navLinkItemDiv a {
   color: #C5D7FB;
   text-decoration: none;
   font-size: 1.5em;
   transition: 0.3s;
 }
 
-.navLinkItemDiv a:hover{
+.navLinkItemDiv a:hover {
   color: #F5F2E3;
 
 }
 
-.mainBodyBackground{
+.mainBodyBackground {
   height: 85vh;
   background-color: #161C39;
   display: flex;
   justify-content: center;
 }
 
-.mainBody{
+.mainBody {
   min-width: 50%;
   max-width: 70%;
   background-color: #161C39;
@@ -116,21 +206,21 @@ table {
   flex-direction: column;
 }
 
-.theresAlwaysMore{
+.theresAlwaysMore {
   color: #C5D7FB;
   font-family: 'Grenze Gotisch', cursive;
   font-size: 2.5rem;
   margin-top: 2rem;
 }
 
-.form{
+.form {
   display: flex;
   align-items: center;
   margin-top: 2rem;
-  width: 70%;
+  min-width: 100%;
 }
 
-.Input-text{
+.Input-text {
   width: 100%;
   height: 2rem;
   background-color: white;
@@ -144,7 +234,7 @@ table {
   box-sizing: border-box;
 }
 
-.submitButton{
+.submitButton {
   height: 2rem;
   width: 2rem;
   background-color: #A2C7E5;
@@ -153,5 +243,57 @@ table {
   border-color: transparent;
   margin-left: -1rem;
   box-sizing: border-box;
-  border-radius: 0px 7px 7px 0px ;
+  border-radius: 0px 7px 7px 0px;
+}
+
+.actualList {
+  margin-top: 1rem;
+  min-width: 100%;
+  background-color: none;
+  border-radius: 7px 7px 0px 0px;
+  flex: 1;
+  overflow: scroll;
+  overflow-x: hidden;
+
+}
+
+.actualList::-webkit-scrollbar {
+  width: 10px;
+}
+
+.actualList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.actualList::-webkit-scrollbar-thumb {
+  background: #A2C7E5;
+}
+
+.actualList::-webkit-scrollbar-thumb:hover {
+  background: #0A0D1C;
+}
+
+.toDoCard {
+  height: 15%;
+  margin: 0.5rem;
+  background-color: lemonchiffon;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Archivo Narrow', sans-serif;
+}
+
+.itemTitle {
+  
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.itemSubtitle {
+  padding-left: 1.3rem;
+}
+
+.submitTimeDate{
+  padding-right: 2rem;
 }
