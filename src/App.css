@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+/* HTML CSS RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* HTML CSS RESET */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+
+.header {
+  background-color: #0A0D1C;
+  color: #A2C7E5;
+  font-family: 'Grenze Gotisch', cursive;
+  height: 15vh;
+  display: flex;
+}
+
+.headerMainTitle{
+  align-self: center;
+  flex: 9;
+  padding-left: 3rem;
+  
+}
+
+.pageTitle{
+  font-size: 2em;
+}
+
+.pageSubtitle{
+  font-size: 1.3em;
+  padding-left: 0.4em;
+}
+
+.navLinksDiv{
+  flex: 1;
+  display: flex;
+  align-self: center;
+  padding-right: 3rem;
+}
+
+.navLinkItemDiv{
+  margin: 0.5rem; 
+}
+
+.navLinkItemDiv a{
+  color: #C5D7FB;
+  text-decoration: none;
+  font-size: 1.5em;
+  transition: 0.3s;
+}
+
+.navLinkItemDiv a:hover{
+  color: #F5F2E3;
+
+}
+
+.mainBodyBackground{
+  height: 85vh;
+  background-color: #161C39;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.mainBody{
+  min-width: 50%;
+  max-width: 70%;
+  background-color: #161C39;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theresAlwaysMore{
+  color: #C5D7FB;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+}
+
+.form{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  width: 70%;
+}
+
+.Input-text{
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 7px;
+  outline: none;
+  border-color: transparent;
+  box-sizing: border-box;
+}
+
+.submitButton{
+  height: 2rem;
+  width: 2rem;
+  background-color: #A2C7E5;
+  font-size: 1.2rem;
+  outline: none;
+  border-color: transparent;
+  margin-left: -1rem;
+  box-sizing: border-box;
+  border-radius: 0px 7px 7px 0px ;
 }
