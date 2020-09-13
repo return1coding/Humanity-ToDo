@@ -5,10 +5,10 @@ export default class ToDoListCard extends Component {
         return (
             <div className="toDoCard">
                 <div className="itemTitleArea">
-                    <h2 className="itemTitle">Hello</h2>
-                    <h3 className="itemSubtitle">Submitted from Malaysia</h3>
+                    <h2 className="itemTitle">{this.props.title}</h2>
+                    <h3 className="itemSubtitle">submitted from {this.props.location}</h3>
                 </div>
-                <div className="submitTimeDate">Dec 32, 2020</div>
+                <div className="submitTimeDate">{this.props.time}</div>
             </div>
         )
     }
