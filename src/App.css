@@ -276,6 +276,7 @@ table {
 .toDoCard {
   height: 15%;
   margin: 0.5rem;
+  padding: 1rem;
   background-color: lemonchiffon;
   border-radius: 10px;
   display: flex;
