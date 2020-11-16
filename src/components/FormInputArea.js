@@ -8,6 +8,7 @@ const FormInputArea = () => {
 
     let textInput = React.createRef();
     const onSubmit = async (e) => {
+        e.preventDefault();
         // console.log(e);
         var titleObject = {
             title: textInput.current.value
@@ -29,7 +30,8 @@ const FormInputArea = () => {
     return (
         <form className="form" onSubmit={(e) => { onSubmit(e); }}>
             <input placeholder="what are we missing?" className="Input-text" name="todo" ref={textInput}></input>
-            <button type="submit" className="submitButton">+</button>
+            <button type="submit" className="submitButton" >+</button>
+            {/* onClick={(e) => { onSubmit(e); }} */}
         </form>
     )
 }
