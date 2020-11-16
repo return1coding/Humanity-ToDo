@@ -29,6 +29,7 @@ const ToDoList = () => {
                                 title={(todo.title).toLowerCase()}
                                 location={(todo.from).toLowerCase()}
                                 time={todo.time}
+                                id={todo._id}
                             />
                         )
                     })
