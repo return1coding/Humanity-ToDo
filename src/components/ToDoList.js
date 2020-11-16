@@ -1,8 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
 import ToDoListCard from './ToDoListCard';
-const mongoose = require('mongoose');
+import { ToDoContext } from '../contexts/toDoContext';
+// const mongoose = require('mongoose');
 
-var listOfToDos = [];
+
+// var listOfToDos = [];
 
 // fetch('https://justinevm.ddns.net/get-all-todos')
 //     .then(response => response.json())
@@ -11,22 +13,17 @@ var listOfToDos = [];
 //     });
 
 const ToDoList = () => {
-    const [todos, setTodos] = useState([]);
+    const { toDos, fetchTodos } = useContext(ToDoContext);
 
-    const fetchTodos = async () => {
-         const apiCall = await fetch('https://justinevm.ddns.net/get-all-todos');
-         const todos = await apiCall.json();
-         setTodos(todos.result);
-         console.log(todos);
-    }
+    
     useEffect(() => {
         fetchTodos();
     }, [])
     return (
-        <div className = "actualList">
+        <div className="actualList">
             <ul>
                 {
-                    todos.map(todo => {
+                    toDos.map(todo => {
                         return (
                             <ToDoListCard
                                 title={(todo.title).toLowerCase()}

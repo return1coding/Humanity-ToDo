@@ -6,8 +6,9 @@ import ScrollAreaComponent from './components/ScrollAreaComponent'
 function App() {
   return (
     <div className="App">
-      <HeaderComponent />
-      <ScrollAreaComponent />
+      
+        <HeaderComponent />
+        <ScrollAreaComponent />
     </div>
   );
 }
