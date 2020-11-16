@@ -20,16 +20,16 @@ const FormInputArea = () => {
                 'Content-Type': 'application/json'
                 // 'Content-Type': 'application/x-www-form-urlencoded',
             },
-        }).then(()=>{
+        }).then(() => {
             fetchTodos();
             textInput.current.value = '';
         })
     }
 
     return (
-        <form className="form">
+        <form className="form" onSubmit={(e) => { onSubmit(e); }}>
             <input placeholder="what are we missing?" className="Input-text" name="todo" ref={textInput}></input>
-            <button type="button" className="submitButton" onClick={(e) => { onSubmit(e); }}>+</button>
+            <button type="submit" className="submitButton">+</button>
         </form>
     )
 }
