@@ -158,14 +158,6 @@ table {
 
 }
 
-.pageTitle {
-  font-size: 2em;
-}
-
-.pageSubtitle {
-  font-size: 1.3em;
-  padding-left: 0.4em;
-}
 
 .navLinksDiv {
   flex: 1;
@@ -178,12 +170,7 @@ table {
   margin: 0.5rem;
 }
 
-.navLinkItemDiv a {
-  color: #C5D7FB;
-  text-decoration: none;
-  font-size: 1.5em;
-  transition: 0.3s;
-}
+
 
 .navLinkItemDiv a:hover {
   color: #F5F2E3;
@@ -206,12 +193,6 @@ table {
   flex-direction: column;
 }
 
-.theresAlwaysMore {
-  color: #C5D7FB;
-  font-family: 'Grenze Gotisch', cursive;
-  font-size: 2.5rem;
-  margin-top: 2rem;
-}
 
 .form {
   display: flex;
@@ -297,4 +278,156 @@ table {
 
 .submitTimeDate{
   padding-right: 2rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .navLinksDiv {
+    flex: 1;
+    display: flex;
+    align-self: center;
+    padding-right: 3rem;
+  }
+
+  .pageTitle {
+    font-size: 2em;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.3em;
+    padding-left: 0.4em;
+  }
+
+  .navLinkItemDiv a {
+    color: #C5D7FB;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 600px) {
+
+  .pageTitle {
+    font-size: 2em;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.3em;
+    padding-left: 0.4em;
+  }
+
+  .theresAlwaysMore {
+  color: #C5D7FB;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  }
+
+  .submitTimeDate{
+    padding-right: 2rem;
+  }
+
+  .itemTitle {
+  
+    font-size: 2rem;
+    padding-left: 1rem;
+  }
+  
+  .itemSubtitle {
+    padding-left: 1.3rem;
+  }
+
+  .navLinkItemDiv a {
+    color: #C5D7FB;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (min-width: 435px) and (max-width: 599px) {
+
+  .pageTitle {
+    font-size: 1.5em;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.1em;
+    padding-left: 0.4em;
+  }
+
+  .theresAlwaysMore {
+  color: #C5D7FB;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  }
+
+  .submitTimeDate{
+    padding-right: 1rem;
+  }
+
+  .itemTitle {
+  
+    font-size: 1.5rem;
+    padding-left: 0.7rem;
+  }
+  
+  .itemSubtitle {
+    padding-left: 1rem;
+  }
+
+  .navLinkItemDiv a {
+    color: #C5D7FB;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: 0.3s;
+  }
+}
+
+@media screen and (max-width: 434px) {
+
+  .pageTitle {
+    font-size: 1.5em;
+  }
+  
+  .pageSubtitle {
+    font-size: 1.1em;
+    padding-left: 0.4em;
+  }
+
+  .theresAlwaysMore {
+  color: #C5D7FB;
+  font-family: 'Grenze Gotisch', cursive;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  }
+
+  .submitTimeDate{
+    padding-right: 0.5rem;
+  }
+
+  .itemTitle {
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+  }
+  
+  .itemSubtitle {
+    font-size: 0.8rem;
+    padding-left: 0.5rem;
+  }
+
+  .navLinksDiv {
+    flex: 1;
+    display: flex;
+    align-self: center;
+    padding-right: 1.3rem;
+  }
+
+  .navLinkItemDiv a {
+    color: #C5D7FB;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s;
+  }
 }
